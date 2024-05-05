@@ -1,1 +1,25 @@
-<p>grafica1 works!</p>
+<div class="row">
+    <div class="col-6">
+        <app-donut titulo="Ventas 2023" 
+            [doughnutChartLabels]='chrtLabels1'
+            [data]='chrtData1'
+            >
+        </app-donut>
+    </div>
+    <div class="col-6">
+        <app-donut titulo="Ventas 2024" 
+            [doughnutChartLabels]="chrtLabels2"
+            [data]="chrtData2"
+            >
+        </app-donut>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <app-donut titulo="Ventas 2025"></app-donut>
+    </div>
+    <div class="col-6">
+        <app-donut titulo="Ventas 2026"></app-donut>
+    </div>    
+</div>
