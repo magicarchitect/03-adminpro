@@ -13,7 +13,7 @@
                         <li><a href="javascript:void()">My Profile </a></li>
                         <li><a href="javascript:void()">My Balance</a></li>
                         <li><a href="javascript:void()">Inbox</a></li>
-                        <li><a href="javascript:void()">Account Setting</a></li>
+                        <li><a [routerLink]="['/dashboard/account-settings']" routerLinkActive="router-link-active" >Account Setting</a></li>
                         <li><a href="javascript:void()">Logout</a></li>
                     </ul>
                 </li>
@@ -25,6 +25,7 @@
                         <li><a href="index2.html">Analytical</a></li>
                         <li><a href="index3.html">Demographical</a></li>
                         <li><a href="index4.html">Modern</a></li>
+                        <li><a [routerLink]="['/dashboard/promesas']" routerLinkActive="router-link-active" >Promesas</a></li>
                     </ul>
                 </li>
                 
