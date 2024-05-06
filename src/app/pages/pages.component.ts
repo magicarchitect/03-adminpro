@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SettingsService } from '../services/settings.service';
+declare function  customInitFunctions(): void;
 
 @Component({
   selector: 'app-pages',
@@ -10,6 +11,8 @@ import { SettingsService } from '../services/settings.service';
 export class PagesComponent implements OnInit {
   constructor(private settingsService: SettingsService){}
 
-  ngOnInit(): void {    
+  ngOnInit(): void {
+    // Inicializamos todos los componentes del Tema AdminPro
+    customInitFunctions();
   }
 }
